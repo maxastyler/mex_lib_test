@@ -1,0 +1,13 @@
+[package]
+name = "mex_lib_test"
+version = "0.1.0"
+authors = ["Max Tyler <maxastyler@gmail.com>"]
+build = "build.rs"
+links = "libmex"
+
+[dependencies]
+libc = "*"
+
+[[example]]
+name = "print_test"
+crate-type = ["cdylib"]
